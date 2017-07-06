@@ -1,0 +1,60 @@
+@media screen and (max-width: 1200px){
+    .alq_wrapper-header{
+        .alq_wrapper-login{
+            .box-login{
+                padding: 10px 15px 0 15px;
+
+                .form-inline{
+                    label{
+                        display: block;
+                        font-weight: 300;
+                    }
+
+                    .form-group{
+                        display: block;
+
+                        .input-group{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px){
+    .alq_wrapper-header{
+        height: auto;
+        display: block;
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 767px){
+    .alq_wrapper-header{
+
+        .alq_wrapper-login{
+            display: block;
+            margin-top: 30px;
+            width: 100%;
+            .box-login{
+                display: block;
+                padding: 10px 15px 0 15px;
+
+                .form-inline{
+                    label{
+                        display: block;
+                        font-weight: 300;
+                    }
+
+                    .form-group{
+                        display: block;
+
+                        .input-group{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

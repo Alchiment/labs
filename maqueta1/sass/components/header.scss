@@ -1,0 +1,221 @@
+$max-height-header: 280px;
+.alq_wrapper-header{
+    background-color: $color-blue-ligth;
+    padding: 10px 50px;
+    /*height: 100%;*/
+    height: $max-height-header;
+    /*min-height: 100px;*/
+    /*max-height: $max-height-header;*/
+    overflow: hidden;
+    display: flex;
+
+    .btn_login_responsive{
+        text-align: center;
+        a{
+            color: $color-white;
+            margin: 0 auto;
+        }
+    }
+
+    .container, .row, div[class^="col-"]{
+        height: 100% !important;
+    }
+
+    .alq_wrapper-logo{
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-content: center;
+        align-items: center;
+
+        img{
+            height: $max-height-header - 20px;
+            margin: 0 auto;
+            vertical-align: middle;
+        }
+    }
+
+    .alq_wrapper-login{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        position: relative;
+
+
+        $width-btn-float-login: 110px;
+
+        .alq_wrp_btn-float{
+            position: absolute;
+            top: -15px;
+            left: 0;
+        }
+
+        .alq_btn-float{
+            padding: 2px;
+            color: $color-white;
+            border: none;
+            border-radius: 0;
+            position: relative;
+
+            &.incline{
+                -webkit-transform: skew(20deg);
+                -moz-transform: skew(20deg);
+                -ms-transform: skew(20deg);
+                -o-transform: skew(20deg);
+                transform: skew(20deg);
+                span{
+                    display: block;
+                    position: relative;
+                    -webkit-transform: skew(-20deg);
+                    -moz-transform: skew(-20deg);
+                    -ms-transform: skew(-20deg);
+                    -o-transform: skew(-20deg);
+                    transform: skew(-20deg);
+                }
+            }
+
+            &.trape{
+                &::after, &::before{
+                    content: "";
+                    width: 10px;
+                    height: 100%;
+                    position: absolute;
+                }
+                &::after{
+                    right: -6px;
+                    top: 0;
+                    -webkit-transform: skew(-20deg);
+                    -moz-transform: skew(-20deg);
+                    -ms-transform: skew(-20deg);
+                    -o-transform: skew(-20deg);
+                    transform: skew(-20deg);  
+                }
+                &::before{
+                    left: -6px;
+                    top: 0;
+                    -webkit-transform: skew(20deg);
+                    -moz-transform: skew(20deg);
+                    -ms-transform: skew(20deg);
+                    -o-transform: skew(20deg);
+                    transform: skew(20deg);  
+                }
+            }
+
+
+            &.btn-login{
+                background-color: $color-yellow;
+                width: $width-btn-float-login;
+                margin-right: 10px;
+
+                &:hover, &:active, &:focus{
+                    background-color: darken($color-yellow, 10%);
+                }
+            }
+            &.btn-register{
+                background-color: $color-orange;
+                width: $width-btn-float-login;
+                &::after, &::before{
+                    background: $color-orange;
+                    -webkit-transition: all 0.2s ease-in-out;
+                    -moz-transition: all 0.2s ease-in-out;
+                    -ms-transition: all 0.2s ease-in-out;
+                    -o-transition: all 0.2s ease-in-out;
+                    transition: all 0.2s ease-in-out;
+                }
+
+                &:hover, &:active, &:focus{
+                    background-color: darken($color-orange, 10%);
+                    &::after, &::before{
+                        background: darken($color-orange, 10%);
+                    }
+                }
+            }
+        }
+
+        .box-login{
+            vertical-align: middle;
+            padding: 10px 40px 0 40px;
+            background-color: $color-grey;
+            border-radius: 10px;
+            width: 100%;
+            position: relative;
+
+            .form-inline{
+                label{
+                    display: block;
+                    font-weight: 300;
+                }
+
+                .input-group-addon{
+                    background: $color-white;
+                }
+            }
+
+            .box-action{
+                margin-top: 20px;
+
+
+                $dimension-btn-social: 30px;
+                a.alq_link-social{
+                    width: $dimension-btn-social;
+                    height: $dimension-btn-social;
+                    border-radius: 100%;
+                    color: $color-white;
+                    background: darken($color-grey, 20%);
+                    text-align: center;
+                    line-height: $dimension-btn-social;
+                    display: inline-block;
+
+                    &.facebook{
+                        background: $color-blue;
+                        color: $color-white;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover{
+                            background: $color-white;
+                            color: $color-blue;
+                        }
+                    }
+
+                    &.twitter{
+                        background: $color-blue-ligth;
+                        color: $color-white;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover{
+                            background: $color-white;
+                            color: $color-blue-ligth;
+                        }
+                    }
+
+                    &.google-plus{
+                        background: $color-red;
+                        color: $color-white;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover{
+                            background: $color-white;
+                            color: $color-red;
+                        }
+                    }
+                }
+
+                button[type="submit"]{
+                    border-top-right-radius: 10px;
+                    border-top-left-radius: 10px;
+                    border-bottom-right-radius: 0;
+                    border-bottom-left-radius: 0;
+                    background: $color-green;
+                    color: $color-white;
+                    font-weight: 500;
+
+                    &:hover{
+                        background: darken($color-green, 10%);
+                    }
+                }
+            }
+        }
+    }
+}

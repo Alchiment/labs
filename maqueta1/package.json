@@ -1,0 +1,17 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "description": "Prueba Alquemedia",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \" npm run sass\" ",
+    "server": "lite-server",
+    "sass":"sass --watch sass/styles.scss:assets/styles.css"
+  },
+  "author": "Richard Rivas Montaño",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "lite-server": "^2.3.0"
+  }
+}

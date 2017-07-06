@@ -1,0 +1,144 @@
+.alq_wrapper-services{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    
+    .box-picture_button{
+        text-align: center;
+        padding: 0 15px;
+
+        .picture{
+
+
+            img{
+                width: 250px;
+                height: 250px;
+                margin: 0 auto;
+            }
+        }
+
+        .action{
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+
+            & a.btn{
+                /*background: $color-grey;*/
+                border-radius: 20px;
+                padding: 15px;
+                display: flex;
+                width: 70%;
+                height: 100%;
+                margin: 0 auto;
+                color: $color-white;
+                font-size: 18px;
+                border: 1px solid transparent;
+                align-content: center;
+                align-items: center;
+
+                span{
+                    margin: 0 5px;
+                    &.icon{
+                        background: $color-white;
+                        width: 40px;
+                        height: 40px;
+                        color: $color-black;
+                        border-radius: 100%;
+                        font-size: 30px;
+                        display: inline-block;
+
+                        i{
+                            line-height: 40px;
+                        }
+                    }
+                }
+
+                &.dance{
+                    background: $color-orange;
+                    &:hover, &:focus, &:active{
+                        background: $color-white;
+                        color: $color-orange;
+                        border-color: $color-orange;
+
+                        span.icon{
+                            background: $color-orange;
+                            color: $color-white;
+                        }
+                    }
+                }
+
+                &.artist{
+                    background: $color-green-ligth;
+                    &:hover, &:focus, &:active{
+                        background: $color-white;
+                        color: $color-green-ligth;
+                        border-color: $color-green-ligth;
+
+                        span.icon{
+                            background: $color-green-ligth;
+                            color: $color-white;
+                        }
+                    }
+                }
+
+                &.events{
+                    background: $color-green;
+                    &:hover, &:focus, &:active{
+                        background: $color-white;
+                        color: $color-green;
+                        border-color: $color-green;
+
+                        span.icon{
+                            background: $color-green;
+                            color: $color-white;
+                        }
+                    }
+                }
+
+                &.bars{
+                    background: $color-yellow;
+                    &:hover, &:focus, &:active{
+                        background: $color-white;
+                        color: $color-yellow;
+                        border-color: $color-yellow;
+
+                        span.icon{
+                            background: $color-yellow;
+                            color: $color-white;
+                        }
+                    }
+                }
+
+                &.shops{
+                    background: $color-red;
+                    &:hover, &:focus, &:active{
+                        background: $color-white;
+                        color: $color-red;
+                        border-color: $color-red;
+
+                        span.icon{
+                            background: $color-red;
+                            color: $color-white;
+                        }
+                    }
+                }
+
+                &.users{
+                    background: $color-blue-ligth;
+                    &:hover, &:focus, &:active{
+                        background: $color-white;
+                        color: $color-blue-ligth;
+                        border-color: $color-blue-ligth;
+
+                        span.icon{
+                            background: $color-blue-ligth;
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
